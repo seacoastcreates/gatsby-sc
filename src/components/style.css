@@ -1,0 +1,11 @@
+
+.logo-title {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  justify-items: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+body {
+  font-family: 'Nota Sans'
+}

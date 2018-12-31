@@ -52,21 +52,30 @@ module.exports = {
         icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
       },
     },
+    // {
+    //   resolve: `gatsby-plugin-prefetch-google-fonts`,
+    //   options: {
+    //     fonts: [
+    //       {
+    //         family: `Fjalla One`,
+    //         subsets: [`latin`],
+    //         variants: [`400`, `700`]
+    //       },
+    //       {
+    //         family: `Noto Sans`,
+    //         variants: [`400`, `700`]
+    //       },
+    //     ],
+    //   },
+    // },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          {
-            family: `Fjalla One`,
-            subsets: [`latin`],
-            variants: [`400`, `700`]
-          },
-          {
-            family: `Noto Sans`,
-            variants: [`400`, `700`]
-          },
-        ],
-      },
+          `Fjalla One\:400,700`,
+          `Noto Sans\:400,700` // you can also specify font weights and styles
+        ]
+      }
     },
     `gatsby-plugin-netlify`, // make sure to put last in the array
   ],
